@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bucketlistpage.css">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ABBY CREMERS</h1>
+			<ul>
+				<li><a href = "index.html" >Home</a></li>
+				<li class="active"><a href = "bucketlist.html">Bucket List</a></li>
+				<li><a href = "travel.html">Travel Diary</a></li>
+			</ul>
+		</nav>
+        <a class="skip-link" href='#mainHeader1'> <button>Skip to Content</button></a>
+        <div id="spacer"></div>
+    </header>
+    <main>
+
+        <div class="container">
+            <h2 id="bucketList">Travel Bucket List!</h1>
+            <div id="newtask">
+                <label id="mainHeader1" for="input1">Make your own travel bucket list :) </label>
+                <div id="spacer"></div>
+                <input id="input1" type="text" placeholder="Where would you like to go?" class="scrollable">
+                <button id="push">Add</button>
+            </div>
+            <div id="tasks"></div>
+        </div>
+    
+        <div class="container">
+            <h2 id="AbbyBucketList">My Travel Bucket List!</h1>
+            <div id="abbyList">
+                <ul>
+                    <li>Paris, France</li>
+                    <li>Tokyo, Japan</li>
+                    <li>Machu Picchu, Peru</li>
+                    <li>Bali, Indonesia</li>
+                </ul>
+            </div>
+        </div>
+    
+    </main>
+</body>
+<script src="test.js"></script>
+<footer>
+    <p>Abby Cremers <br>2023</p>
+</footer>
+
+</html>

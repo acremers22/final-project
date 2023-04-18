@@ -1,0 +1,149 @@
+/* mobile first! */
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: white;
+    background-image: url('/images/bucketlist/sunset.jpg');
+    background-size: cover;
+}
+
+h2{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2rem;
+}
+
+ #abbyList {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+
+
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+
+#newtask input{
+    width:75%;
+    height: 45px;
+    padding: 15px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.3rem;
+    border: 2px solid #d1d3d4;
+    overflow-x: scroll;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0A5DBD;
+}
+#newtask button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 1.3rem;
+    background-color: #0A5DBD;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+}
+#tasks{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: lightblue;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.task button{
+    background-color: white;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.scrollable::placeholder {
+    font-size: 0.9rem;
+} 
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 40%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px;
+    min-height: 100px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#abbyList ul{
+    list-style: disc;
+}
+
+/* desktop view */
+
+@media screen and (min-width: 1024px) { /* adjust the screen size as needed */
+    main{
+        flex-direction: row;
+        margin-top: 50px;
+    }
+}
